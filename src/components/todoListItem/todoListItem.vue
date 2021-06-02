@@ -9,9 +9,9 @@
         )
       .title {{ todo.name }}
     .button
-      button.view(
-        type="button"
-        @click="removeTodo"
+      router-link.view(
+        tag="button"
+        :to="`/view/${todo.name}`"
       ) ➜
     .button
       button.remove(
