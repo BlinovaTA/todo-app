@@ -6,7 +6,19 @@
     .remove {
       visibility: visible;
     }
+
+    .view {
+      visibility: visible;
+    }
   }
+}
+
+.view {
+  visibility: hidden;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  font-size: 20px;
 }
 
 .checked .title {

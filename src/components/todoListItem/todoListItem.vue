@@ -9,10 +9,15 @@
         )
       .title {{ todo.name }}
     .button
+      button.view(
+        type="button"
+        @click="removeTodo"
+      ) ➜
+    .button
       button.remove(
         type="button"
         @click="removeTodo"
-      ) x
+      ) ✖
 </template>
 
 <script>
